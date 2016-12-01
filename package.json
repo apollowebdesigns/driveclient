@@ -1,0 +1,25 @@
+{
+  "name": "driveclient",
+  "version": "1.0.0",
+  "description": "for node js",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apollowebdesigns/driveclient.git"
+  },
+  "author": "andy evans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apollowebdesigns/driveclient/issues"
+  },
+  "homepage": "https://github.com/apollowebdesigns/driveclient#readme",
+  "devDependencies": {
+    "angular": "^1.5.9",
+    "bootstrap": "^3.3.7",
+    "grunt": "^1.0.1",
+    "jquery": "^3.1.1"
+  }
+}

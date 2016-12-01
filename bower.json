@@ -1,0 +1,17 @@
+{
+  "name": "driveclient",
+  "description": "for node js",
+  "main": "app/app.js",
+  "authors": [
+    "andy evans"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/apollowebdesigns/driveclient",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
