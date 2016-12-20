@@ -16,16 +16,15 @@
 <body class="container" ng-app="app" ng-controller="AppController as appCtrl">
 
 <h3 ng-bind="appCtrl.requestedData"></h3>
-<div>
-    <h1 class="heading">Pi Motors</h1>
-    <div class="row">
-        <button class="btn" ng-click="appCtrl.driveForwards()">forwards</button>
-        <button class="btn" ng-click="appCtrl.diveData()">backwards</button>
+    <div>
+        <h1 class="heading">Pi Motors</h1>
+        <div class="row">
+            <button class="btn" ng-click="appCtrl.driveForwards()">forwards</button>
+        </div>
     </div>
-</div>
-<div class="row">
-    <h2 class="jumbotron">Pi Test Light</h2>
-    <button class="btn btn-primary" ng-click="appCtrl.getData('blue')">blue led test</button>
-</div>
+    <div class="row">
+        <h2 class="jumbotron">Pi Test Light</h2>
+        <button class="btn btn-primary" ng-click="appCtrl.getData('blue')">blue led test</button>
+    </div>
 </body>
 </html>

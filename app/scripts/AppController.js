@@ -8,10 +8,11 @@ function AppController(ledService, driveService) {
 
     var vm = this;
     vm.requestedData = 'test data';
+
     vm.getData = ledService.getData;
     vm.driveForwards = driveService.driveForwards;
-    vm.driveData = driveService.driveData;
-
-    vm.driveData = driveService.driveData;
+    vm.driveRight = driveService.driveRight;
+    vm.driveLeft = driveService.driveLeft;
+    vm.driveReverse = driveService.driveReverse;
 
 }
