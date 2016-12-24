@@ -7,7 +7,7 @@ AppController.$inject = ['ledService', 'driveService'];
 function AppController(ledService, driveService) {
 
     var vm = this;
-    vm.requestedData = 'test data';
+    vm.requestedData = '';
 
     vm.getData = ledService.getData;
     vm.driveForwards = driveService.driveForwards;
