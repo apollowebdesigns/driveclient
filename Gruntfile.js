@@ -35,13 +35,18 @@ module.exports = function(grunt) {
         },
 
         karma: {
-            options: {
-                // point all tasks to karma config file
-                configFile: 'config/karma-conf.js'
-            },
             unit: {
-                // run tests once instead of continuously
-                singleRun: true
+                options: {
+                    frameworks: ['jasmine'],
+                    singleRun: true,
+                    browsers: ['PhantomJS'],
+                    files: [
+                        //TODO get files properly loaded into project http://paislee.io/testing-angularjs-with-grunt-karma-and-jasmine/
+                        'node_modules/angular/angular.js',
+                        'bower_components/angular-mocks/angular-mocks.js',
+                        'test/unit/**/*.js'
+                    ]
+                }
             }
         }
     });
