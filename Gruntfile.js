@@ -40,14 +40,14 @@ module.exports = function(grunt) {
                     configFile: 'test/karma-conf.js',
                     frameworks: ['jasmine'],
                     singleRun: true,
-                    browsers: ['PhantomJS'],
-                    files: [
-                        'node_modules/angular/angular.js',
-                        'bower_components/angular-mocks/angular-mocks.js',
-                        'app/scripts/app.js',
-                        'app/scripts/*.js',
-                        'test/unit/**/*.js'
-                    ]
+                    browsers: ['PhantomJS']
+                    // files: [
+                    //     'node_modules/angular/angular.js',
+                    //     'bower_components/angular-mocks/angular-mocks.js',
+                    //     'app/scripts/app.js',
+                    //     'app/scripts/*.js',
+                    //     'test/unit/**/*.spec.js'
+                    // ]
                 }
             }
         }

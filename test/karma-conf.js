@@ -2,28 +2,17 @@ module.exports = function(config){
     config.set({
         //  root path location that will be used to resolve all relative paths in files and exclude sections, should be the root of your project
         basePath : '../',
+        port: '8889',
 
         // files to include, ordered by dependencies
-        files : [
-            // include relevant Angular files and libs
-            'node_modules/angular/angular.js',
-            'bower_components/angular/angular-mocks.js',
-            // 'node_modules/**/*.js',
-            // 'bower_components/**/*.js',
 
-            // include js files
+        files: [
+            'node_modules/angular/angular.js',
+            'bower_components/angular-mocks/angular-mocks.js',
             'app/scripts/app.js',
             'app/scripts/*.js',
-
-            // include unit test specs
-            'test/unit/*.js'
+            'test/unit/**/*.spec.js'
         ],
-        // files to exclude
-        // exclude : [
-        //     'app/lib/angular/angular-loader.js'
-        //     , 'app/lib/angular/*.min.js'
-        //     , 'app/lib/angular/angular-scenario.js'
-        // ],
 
         // karma has its own autoWatch feature but Grunt watch can also do this
         autoWatch : false,
