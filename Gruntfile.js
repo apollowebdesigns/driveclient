@@ -37,13 +37,15 @@ module.exports = function(grunt) {
         karma: {
             unit: {
                 options: {
+                    configFile: 'test/karma-conf.js',
                     frameworks: ['jasmine'],
                     singleRun: true,
                     browsers: ['PhantomJS'],
                     files: [
-                        //TODO get files properly loaded into project http://paislee.io/testing-angularjs-with-grunt-karma-and-jasmine/
                         'node_modules/angular/angular.js',
                         'bower_components/angular-mocks/angular-mocks.js',
+                        'app/scripts/app.js',
+                        'app/scripts/*.js',
                         'test/unit/**/*.js'
                     ]
                 }

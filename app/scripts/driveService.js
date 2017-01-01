@@ -14,12 +14,18 @@ function driveService ($http, $log) {
     this.driveRight = _driveRight;
     this.driveLeft = _driveLeft;
     this.driveReverse = _driveReverse;
+    this.driveTest = _driveTest;
+
 
     var uniqueIP = "192.168.1.69";
 
     var uniqueIPparents = "192.168.1.74";
 
     var local = 'localhost';
+
+    function _driveTest() {
+        return 2;
+    }
 
     function _driveForwards() {
         $log.info('fowards function entered');
