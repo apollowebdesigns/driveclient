@@ -1,5 +1,4 @@
 describe('app', function () {
-    var test;
 
     var driveService;
 
@@ -7,10 +6,6 @@ describe('app', function () {
     beforeEach(inject(function($injector) {
         driveService = $injector.get('driveService');
     }));
-
-    it('test that we are hitting the service', function() {
-        expect(driveService.driveTest()).toBe(2);
-    });
 
     it('should drive forwards', function() {
         expect(driveService.driveForwards()).toBe(undefined);
