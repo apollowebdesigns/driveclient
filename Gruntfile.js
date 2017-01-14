@@ -59,6 +59,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-serve');
     grunt.registerTask('unit-test', ['karma:continuous:start', 'watch:karma']);
+    grunt.registerTask('serve', ['connect']);
     grunt.registerTask('default', ['jshint']);
 
 };
